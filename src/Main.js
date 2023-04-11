@@ -152,7 +152,7 @@ function Main(){
             <section className="game">
                 {GameStep()}
             </section>
-            <div className="rule-wrapper">
+            <div className={gameStep === 1 ? "rule-center" : "rule-wrapper"}>
                 <div className="rule" onClick={() => clickRules()}>
                     <p>Rules</p>
                 </div>

@@ -33,11 +33,10 @@ main {
 header {
   width: 100%;
   max-width: 695px;
-  margin: 0px 30px 0px 30px;
+  margin: 45px 30px 45px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .header-wrapper {
@@ -47,10 +46,14 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0px 30px;
 }
 
 .game {
+  height: 100%;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .rps {
@@ -253,8 +256,17 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
-  align-items: flex-end;
-  height: 100%;
+  align-items: flex-start;
+  height: 30%;
+}
+
+.rule-center {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  align-items: center;
+  height: 30%;
 }
 
 .rule {
@@ -558,6 +570,10 @@ h1 {
     width: 100%;
   }
 
+  .game {
+    margin: 0;
+  }
+
   h1 {
     line-height: 19px;
     font-size: 1.5em;
@@ -619,9 +635,10 @@ h1 {
 
   header {
     max-width: unset;
-    margin: 0;
     display: flex;
     justify-content: center;
+    height: unset;
+    margin: 30px 0px 0px 0px;
   }
 
   .result h1 {
@@ -643,7 +660,7 @@ h1 {
     height: unset;
   }
 
-  .rule-wrapper {
+  .rule-wrapper, .rule-center {
     justify-content: center;
     align-items: center;
   }
